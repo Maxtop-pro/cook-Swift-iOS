@@ -7,7 +7,6 @@
 - [x] Swift 4.2
 - [x] iOS Version 12.0 or above 
 - [x] CocoaPods
-- [x] **[cocoapods-keys](https://github.com/orta/cocoapods-keys)**
 - [x] Twitter Consumer API Keys, and Consumer API Secret generated for your Approved Twitter App
 - [x] Google API Key and also enabled service for Natural Language
 
@@ -21,8 +20,6 @@
 
 ## Setup Guide
 
-### Use CocoaPods
-[CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
 
 ```bash
 $ gem install cocoapods
@@ -30,7 +27,7 @@ $ gem install cocoapods
 ## Don't try to open the project yet. You need to install following CocoaPods Plugin first.
 
 ### Use CocoaPod Keys
-Another tool you might have to install is CocoaPod Keys. This CocoaPod plugin is used to securely store the secret keys and various other API keys within mac OS Keychain tool and separate it from the Source code and version control. You can read about it more in following [Cocoapods-keys GitHub](https://github.com/orta/cocoapods-keys) project page.
+Another tool you might have to install is CocoaPod Keys. This CocoaPod plugin is used to securely store the secret keys and various other API keys within mac OS Keychain tool and separate it from the Source code and version control. You can read about it more in following 
 
 #### Install it using following command. You may want to use `sudo` sometimes.
 ```ruby
@@ -80,7 +77,7 @@ Specifics                 | Details
 |Architecture - MVC       | For this sort of a simple application, MVC is more than enough. |
 |Architecture - MVVM      | Experiment is In-Progress! Check out the `HLF_MVVM_Experiment` Branch!!!<br/> There are several ways to implement this too. But, I would like to start from Protocol oriented manner than going for improved ways which use a lot of language features and extra libraries, as I need to understand how iOS can be worked out from Scratch. Await for updates and check the branch. I've been already using MVVM for Xamarin and it makes life more easier, I would try out iOS too, soon.
 Networking - Alamofire    | Check following list of files: <br/>- `Network\NetworkProtocol.swift` <br/>- `Network\NetworkClient.swift` <br/>- `Services\TwitterAPIService.swift`<br/>-  `Services\GoogleNaturalLangAPIService.swift`
-| Models                  | All the models used for the app reside within this folder. Almost all the models which are consumed by the Network Services are extending `Mappable` class from `ObjectMapper` library. You can find more details about it by visiting [ObjectMapper](https://github.com/tristanhimmelman/ObjectMapper) GitHub Project.
+| Models                  | All the models used for the app reside within this folder. Almost all the models which are consumed by the Network Services are extending `Mappable` class from `ObjectMapper` library. You can find more details about it by visiting  GitHub Project.
 | Views                   | Storyboards and all the other Nib files are included within this folder
 | Controllers             | You can find them on its folder `Controller`
 |App Preferences          | Used a simple Singleton class to keep the `NSUserDefaults` managed.
